@@ -114,15 +114,14 @@
   .file {
     padding: 1%;
     border: 1px solid #ccc;
-    margin-left: 81px;
+/*     margin-left: 81px; */
     background-color: white;
-    margin-right: 88px;
+/*     margin-right: 88px; */
     margin-bottom: 8px;
   }
   #cancel {
     background-color: #494949 !important;
-    margin-left: -54px;
-    margin-right: 38px;
+  
   }
   .heart img {
     width: 20px;
