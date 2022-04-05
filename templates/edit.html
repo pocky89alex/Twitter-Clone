@@ -9,15 +9,18 @@
     <section class="post_form">
         <form action="/edit/{{post.id}}/" method="POST" enctype="multipart/form-data">
             {%csrf_token %}
-           
-
+           <div class="logo">
+                
+                <img src="{% static 'img/man-user.png' %}" alt="" />
+            </div>
+       <div>
             <input class="nameimg" type="text" name="name" value="{{post.name}}" />
             <textarea name="body" placeholder="What's on your mind?" rows="4" cols="50">{{post.body}}</textarea>
             <img src="{{post.image.url}}" class="image2" style="width: 50%; padding-bottom: 20px" /><br /><br />
-            <input class="file" name="image" type="file" cols="10" />
+            <input class="file" name="image" type="file" cols="10" /><br>
             <button name="cancel" href="/" type="submit" id="cancel">Cancel</button>
             <button class="update" type="submit" class="update">Update</button>
-
+            </div>
         </form>
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
